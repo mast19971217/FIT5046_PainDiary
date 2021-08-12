@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PainDiary</string>        
+    <string-array name="locations">                  
+        <item>Back</item>                  
+        <item>Neck</item>                  
+        <item>Head</item>                  
+        <item>Knees</item>
+        <item>Hips</item>
+        <item>Abdomen</item>
+        <item>Shoulders</item>
+        <item>Shins</item>
+        <item>Jaw</item>
+        <item>Facial</item>
+    </string-array>
+    <string-array name="indexes">                  
+        <item>Temperature</item>                  
+        <item>Humidity</item>                  
+        <item>Atmospheric Pressure</item>                  
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

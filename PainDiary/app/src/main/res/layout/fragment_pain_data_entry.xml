@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PainDataEntry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TimePicker
+            android:timePickerMode = "spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/pick"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button1"
+            android:textSize="24sp"
+            android:text="SetClock"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pain intensity level(0:no pain-10:upper limit):"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarpainlevel"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="3" />
+
+        <TextView
+            android:id="@+id/textViewpainlevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location of Pain:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerlocation"
+            android:layout_width="match_parent"
+            android:entries = "@array/locations"
+
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="false" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MOOD:"
+            android:textSize="20sp" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:id="@+id/group_divider">
+
+            <RadioButton
+                android:id="@+id/verylow"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:drawableRight="@drawable/verylow"
+
+                android:text="very low"
+                android:textSize="23sp" />
+
+            <RadioButton
+                android:id="@+id/low"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:drawableRight="@drawable/low"
+                android:text="low"
+                android:textSize="23sp" />
+
+            <RadioButton
+                android:id="@+id/average"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:drawableRight="@drawable/average"
+                android:text="average"
+                android:textSize="23sp" />
+
+            <RadioButton
+                android:id="@+id/good"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:drawableRight="@drawable/good"
+                android:text="good"
+                android:textSize="23sp" />
+
+            <RadioButton
+                android:id="@+id/verygood"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:drawableRight="@drawable/verygood"
+                android:text="very good"
+                android:textSize="23sp" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal of Steps:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Steps:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit" />
+
+
+    </LinearLayout>
+</ScrollView>
